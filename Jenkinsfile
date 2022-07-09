@@ -4,7 +4,7 @@ pipeline {
         maven 'M3_8_6'
     }
     stages {
-        
+       /* 
         stage('Kitchen') {
             when {
                 anyOf {
@@ -58,7 +58,7 @@ pipeline {
                 }
             }
         }
-
+*/
         stage('Database') {
             steps {
                 dir("liquibase/"){
